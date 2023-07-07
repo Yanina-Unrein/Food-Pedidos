@@ -142,6 +142,8 @@
     .btn-icon{
         border: none;
         background-color: transparent;
+        font-size: 1rem;
+        font-weight: 500;
     }
     .btn-icon:hover {
         cursor: pointer;
