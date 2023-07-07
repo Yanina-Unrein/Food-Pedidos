@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     background: rgb(255,255,255);
     background: linear-gradient(95deg, rgba(255,255,255,1) 46%, rgba(254,153,28,1) 100%);
 }
