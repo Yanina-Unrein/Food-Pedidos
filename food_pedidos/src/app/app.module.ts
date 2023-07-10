@@ -4,8 +4,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from "./shared/shared.module";
-import { HeaderComponent } from './shared/header/header.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ApplicationModule } from './application/application.module';
+
 
 @NgModule({
     declarations: [
@@ -17,7 +17,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         BrowserModule,
         AppRoutingModule,
         NgxSpinnerModule,
-        SharedModule
+        SharedModule,
+        ApplicationModule
     ]
 })
 export class AppModule { }
