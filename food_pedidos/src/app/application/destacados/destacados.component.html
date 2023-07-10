@@ -1,0 +1,14 @@
+<section class="section-destacados">
+    <h2 class="title-destacado">DESTACADOS</h2>
+    <div class="cards-container">
+        <div class="card-slider">
+          <div class="card" *ngFor="let comida of comidas">
+            <img class="img-card" [src]="comida.imagen" alt="Imagen de comida">
+            <h3 class="title-food">{{ comida.titulo }}</h3>
+            <h4 class="title-restaurant">{{ comida.comercio }}</h4>
+            <span class="card-price">Precio: {{ comida.precio }}</span>
+            <button class="btn-card" (click)="pedir(comida)">PEDIR</button>
+          </div>
+        </div>
+    </div>
+</section>
