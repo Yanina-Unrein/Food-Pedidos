@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SearchComponent } from './search/search.component';
+import { DestacadosComponent } from './destacados/destacados.component';
 
 
 
 @NgModule({
   declarations: [
-    SearchComponent
+    SearchComponent,
+    DestacadosComponent
   ],
   imports: [
     CommonModule
   ],
   exports:[
-    SearchComponent
+    SearchComponent,
+    DestacadosComponent
   ]
 })
 export class ApplicationModule { }

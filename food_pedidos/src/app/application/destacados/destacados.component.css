@@ -1,0 +1,76 @@
+.section-destacados{
+    padding: 50px 5px;
+    display: flex;
+    flex-direction: column;
+}
+.title-destacado{
+    text-align: center;
+    padding: 20px;
+    color: rgba(254,153,28,1);
+}
+
+.cards-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+  
+.card-slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 10px;
+}
+  
+.card-slider::-webkit-scrollbar {
+    display: none;
+}
+  
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex: 0 0 auto;
+    width: 200px;
+    scroll-snap-align: start;
+    border: 1px solid rgb(248, 208, 160);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 20px;
+}
+  
+.img-card {
+    max-width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.title-food{
+    font-size: 1.2rem;
+}
+.title-restaurant{
+    font-size: 0.95rem;
+}
+.card-price{
+    font-size: 0.80rem;
+}
+  
+.btn-card {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100px;
+    background: rgba(254,153,28,1);
+    border: none;
+    color: #fff;
+}
+.btn-card:hover{
+    color: rgba(254,153,28,1);
+    background: #fff;
+    border: 1px solid rgba(254,153,28,1);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
