@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoadingComponent } from './loading/loading.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -12,7 +13,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
   declarations: [
     HeaderComponent,
     NavbarComponent,
-    LoadingComponent
+    LoadingComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
   ],
   exports:[
     HeaderComponent,
-    LoadingComponent
+    LoadingComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
