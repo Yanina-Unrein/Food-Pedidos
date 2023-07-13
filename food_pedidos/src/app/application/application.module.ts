@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SearchComponent } from './search/search.component';
 import { DestacadosComponent } from './destacados/destacados.component';
 import { BannerComponent } from './banner/banner.component';
+import { ProductosComponent } from './productos/productos.component';
 
 
 
@@ -10,7 +11,8 @@ import { BannerComponent } from './banner/banner.component';
   declarations: [
     SearchComponent,
     DestacadosComponent,
-    BannerComponent
+    BannerComponent,
+    ProductosComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import { BannerComponent } from './banner/banner.component';
   exports:[
     SearchComponent,
     DestacadosComponent,
-    BannerComponent
+    BannerComponent,
+    ProductosComponent
   ]
 })
 export class ApplicationModule { }
