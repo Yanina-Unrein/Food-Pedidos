@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from "./shared/shared.module";
 import { ApplicationModule } from './application/application.module';
+import { PagesModule } from './pages/pages.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ApplicationModule } from './application/application.module';
         AppRoutingModule,
         NgxSpinnerModule,
         SharedModule,
-        ApplicationModule
+        ApplicationModule,
+        PagesModule
     ]
 })
 export class AppModule { }

@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-
-
-import { LoadingComponent } from './shared/loading/loading.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { PerfilComponent } from './application/perfil/perfil.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/loading', pathMatch: 'full' },
-  { path: 'loading', component: LoadingComponent },
-  //{ path: 'FoodPedidos', component:  }
-  //{ path: '', component:  }
+  { path:'', component:InicioComponent},
+  { path:'perfil', component:PerfilComponent}
 ]; 
 
 
