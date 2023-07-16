@@ -1,0 +1,81 @@
+<section class="contain-perfil">
+    <h1 class="perfil-title">Mi Perfil</h1>
+    <div class="header-perfil">
+        <div class="profile-image-container">
+            <label for="profile-image-upload">
+              <div class="profile-image">
+                <i class="bi bi-camera-fill"></i>
+              </div>
+              <input type="file" id="profile-image-upload" accept="image/*">
+            </label>
+        </div>
+        <div>
+            <h2 class="header-title">Nombre y Apellido</h2>
+            <span class="header-email">email@email.com</span>
+        </div>
+    </div>
+    <article class="user-panel">
+        <h3 class="panel-title">Mis Datos</h3>
+        <div class="user-info">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <div class="input-group">
+                  <input type="email" class="form-control" id="email" [readonly]="!editing">
+                  <div class="input-group-append">
+                    <span class="input-group-text edit-icon" (click)="toggleEditing()">
+                      <i class="bi bi-pencil-fill"></i>
+                    </span>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contraseña">Contraseña:</label>
+                <div class="input-group">
+                  <input type="password" class="form-control" id="contraseña" [readonly]="!editing">
+                  <div class="input-group-append">
+                    <span class="input-group-text edit-icon" (click)="toggleEditing()">
+                      <i class="bi bi-pencil-fill"></i>
+                    </span>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <div class="input-group">
+                  <input type="tel" class="form-control" id="telefono" [readonly]="!editing">
+                  <div class="input-group-append">
+                    <span class="input-group-text edit-icon" (click)="toggleEditing()">
+                      <i class="bi bi-pencil-fill"></i>
+                    </span>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="direccion" [readonly]="!editing">
+                  <div class="input-group-append">
+                    <span class="input-group-text edit-icon" (click)="toggleEditing()">
+                      <i class="bi bi-pencil-fill"></i>
+                    </span>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="localidad">Localidad:</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="localidad" [readonly]="!editing">
+                  <div class="input-group-append">
+                    <span class="input-group-text edit-icon" (click)="toggleEditing()">
+                      <i class="bi bi-pencil-fill"></i>
+                    </span>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="contain-btn">
+        <button class="btn-perfil"><i class="bi bi-heart bi-modify"></i>Favoritos</button>
+        <button class="btn-perfil"><i class="bi bi-box-arrow-right bi-modify"></i>Cerrar Sesión</button>
+    </div>
+</section>
