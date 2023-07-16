@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './pages/inicio/inicio.component';
-import { PerfilComponent } from './application/perfil/perfil.component';
+import { ComercioComponent } from './application/comercio/comercio.component';
 
 
 const routes: Routes = [
   { path:'', component:InicioComponent},
-  { path:'perfil', component:PerfilComponent}
+  { path:'comercio', component:ComercioComponent}
 ]; 
 
 

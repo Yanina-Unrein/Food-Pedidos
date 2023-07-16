@@ -7,6 +7,7 @@ import { BannerComponent } from './banner/banner.component';
 import { ProductosComponent } from './productos/productos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { SharedModule } from '../shared/shared.module';
+import { ComercioComponent } from './comercio/comercio.component';
 
 
 
@@ -16,7 +17,8 @@ import { SharedModule } from '../shared/shared.module';
     DestacadosComponent,
     BannerComponent,
     ProductosComponent,
-    PerfilComponent
+    PerfilComponent,
+    ComercioComponent
   ],
   imports: [
     CommonModule,
