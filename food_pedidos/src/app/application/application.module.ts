@@ -8,6 +8,8 @@ import { ProductosComponent } from './productos/productos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { SharedModule } from '../shared/shared.module';
 import { ComercioComponent } from './comercio/comercio.component';
+import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,12 +20,14 @@ import { ComercioComponent } from './comercio/comercio.component';
     BannerComponent,
     ProductosComponent,
     PerfilComponent,
-    ComercioComponent
+    ComercioComponent,
+    IniciarSesionComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   exports:[
     SearchComponent,

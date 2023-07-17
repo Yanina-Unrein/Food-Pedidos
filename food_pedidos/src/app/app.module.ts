@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from "./shared/shared.module";
 import { ApplicationModule } from './application/application.module';
 import { PagesModule } from './pages/pages.module';
@@ -18,6 +19,7 @@ import { PagesModule } from './pages/pages.module';
         BrowserModule,
         AppRoutingModule,
         NgxSpinnerModule,
+        ReactiveFormsModule,
         SharedModule,
         ApplicationModule,
         PagesModule
