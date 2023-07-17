@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { ComercioComponent } from './application/comercio/comercio.component';
+import { IniciarSesionComponent } from './application/iniciar-sesion/iniciar-sesion.component';
 
 
 const routes: Routes = [
   { path:'', component:InicioComponent},
+  { path:'login', component:IniciarSesionComponent},
   { path:'comercio', component:ComercioComponent}
 ]; 
 
