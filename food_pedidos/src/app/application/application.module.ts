@@ -10,6 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ComercioComponent } from './comercio/comercio.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RegistrarseComponent } from './registrarse/registrarse.component';
 
 
 
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProductosComponent,
     PerfilComponent,
     ComercioComponent,
-    IniciarSesionComponent
+    IniciarSesionComponent,
+    RegistrarseComponent
   ],
   imports: [
     CommonModule,

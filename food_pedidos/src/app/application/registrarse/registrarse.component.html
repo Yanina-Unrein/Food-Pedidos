@@ -1,0 +1,49 @@
+<section class="section-form">
+    <div class="container-header"> 
+        <h1 class="title-header">REGÍSTRATE</h1>
+        <p class="info-header">Completa los campos para registrarte!</p>   
+    </div>  
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" action="?" method="post" class="container-form">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" formControlName="email" required>
+          <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched" class=" alert alert-warning message-warning" role="alert">
+            <div *ngIf="registerForm.get('email')?.errors?.['required']">Email requerido</div>
+            <div *ngIf="registerForm.get('email')?.errors?.['email']" class="alert alert-danger" role="alert">Email inválido</div>
+          </div>
+        </div>      
+        <div class="mb-3"> 
+          <label for="firstName" class="form-label">Nombre</label>
+          <input type="text" id="firstName" class="form-control" formControlName="firstName" required>
+          <div *ngIf="registerForm.get('firstName')?.invalid && registerForm.get('firstName')?.touched" class="alert alert-warning message-warning" role="alert">
+            Nombre requerido
+          </div>
+        </div>     
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Apellido</label>
+          <input type="text" id="lastName" class="form-control" formControlName="lastName" required>
+          <div *ngIf="registerForm.get('lastName')?.invalid && registerForm.get('lastName')?.touched" class="alert alert-warning message-warning" role="alert">
+            Apellido requerido
+          </div>
+        </div>      
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" id="password" class="form-control" formControlName="password" required (blur)="obtenerPassword()">
+          <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" class="alert alert-warning message-warning" role="alert">
+            <div *ngIf="registerForm.get('password')?.hasError('required')">Contraseña requerida</div>
+            <div *ngIf="registerForm.get('password')?.hasError('minlength')">Al menos 6 caracteres</div>
+          </div>
+        </div>     
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Repetir contraseña</label>
+          <input type="password" id="confirmPassword" class="form-control" formControlName="confirmPassword" required (blur)="compararPass()">
+          <div *ngIf="registerForm.get('confirmPassword')?.invalid && registerForm.get('confirmPassword')?.touched" class="alert alert-warning message-warning" role="alert">
+            Repetir contraseña requerida
+          </div>
+          <div *ngIf="registerForm.get('confirmPassword')?.value !== registerForm.get('password')?.value && registerForm.get('confirmPassword')?.touched" class="alert alert-danger message-warning" role="alert">          
+            Las contraseñas no coinciden
+          </div>
+        </div>     
+        <button type="submit" [disabled]="registerForm.invalid" class="btn-submit">Registrarse</button>
+    </form>
+</section>
