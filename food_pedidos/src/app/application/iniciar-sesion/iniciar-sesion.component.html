@@ -1,6 +1,6 @@
 <section class="section-form">
         <div class="container-header"> 
-            <h1 class="title-header">Inicia Sesión</h1>
+            <h1 class="title-header">INICIAR SESIÓN</h1>
             <p class="info-header">Ingrese su email y contraseña!</p>   
         </div>  
         <form class="container-form" action="?" method="post" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
@@ -24,6 +24,6 @@
             </div>                 
         </form>           
         <div class="registrarse-link">
-            <p class="mb-0">No tienes cuenta?<a href="#!" class="fw-bold">Regístrate</a></p>
+            <p class="mb-0">No tienes cuenta?<a routerLink="/registrarse" class="fw-bold">Regístrate</a></p>
         </div>             
 </section>
