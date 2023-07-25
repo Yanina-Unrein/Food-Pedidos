@@ -11,6 +11,7 @@ import { ComercioComponent } from './comercio/comercio.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
+import { CatalogoComponent } from './catalogo/catalogo.component';
 
 
 
@@ -23,7 +24,8 @@ import { RegistrarseComponent } from './registrarse/registrarse.component';
     PerfilComponent,
     ComercioComponent,
     IniciarSesionComponent,
-    RegistrarseComponent
+    RegistrarseComponent,
+    CatalogoComponent
   ],
   imports: [
     CommonModule,
