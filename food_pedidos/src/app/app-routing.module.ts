@@ -6,6 +6,7 @@ import { ComercioComponent } from './application/comercio/comercio.component';
 import { IniciarSesionComponent } from './application/iniciar-sesion/iniciar-sesion.component';
 import { RegistrarseComponent } from './application/registrarse/registrarse.component';
 import { CatalogoComponent } from './application/catalogo/catalogo.component';
+import { FavoritosComponent } from './application/favoritos/favoritos.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path:'login', component:IniciarSesionComponent},
   { path:'registrarse', component:RegistrarseComponent},
   { path:'comercio', component:ComercioComponent},
-  { path: 'catalogo/:categoria', component: CatalogoComponent }
+  { path: 'catalogo/:categoria', component: CatalogoComponent },
+  { path:'favoritos', component:FavoritosComponent}
 ]; 
 
 
