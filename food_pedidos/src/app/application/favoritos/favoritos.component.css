@@ -1,0 +1,123 @@
+.favoritos-section{
+    margin-top: 50px;
+    padding: 20px 10px;
+}
+
+span{
+    border: 1px solid #6d6c6c;
+    width: 100%;
+    display: block;
+}
+
+.title{
+    font-weight: 600;
+    color: rgba(254,153,28,1);
+}
+
+.container-fav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 5px;
+    margin-top: 50px;
+}
+
+.favoritos-text{
+    font-size: 0.90rem;
+}
+
+.btn-back{
+    text-decoration: none;
+    border: none;
+    background-color: rgba(254,153,28,1);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 0.5em 1.2em;
+    position: relative;
+    cursor: pointer;
+}
+.btn-back::before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(26, 25, 25, 0.1);
+    transition: all 1s ease;
+}
+.btn-back:hover:before {
+    width: 100%;
+}
+
+.title-fav{
+    font-size: 1rem;
+    padding: 20px 0;
+}
+
+.container-food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.card-food {
+    display: flex;
+    align-items: center;
+    /* Ajusta el espacio entre la imagen y el contenido */
+    gap: 10px;
+    border: 1px solid rgba(254,153,28,1);
+    border-radius: 20px;
+    padding: 5px;
+}
+.card-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* El contenido ocupa todo el espacio restante */
+} 
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0; /* Elimina el margen predeterminado del título */
+}
+.card-description{
+    font-size: 0.9rem;
+}
+.card-img {
+    max-width: 100px;
+    height: auto;
+}
+.btn-add{
+    border: none;
+    background-color: rgba(254,153,28,1);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@media(min-width:600px){
+    .container-food{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .card-food{
+        width: 280px;
+    }
+}
+
+@media(min-width:900px){
+    .container-food{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}

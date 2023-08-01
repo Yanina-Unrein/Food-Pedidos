@@ -12,6 +12,7 @@ import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.componen
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
+import { FavoritosComponent } from './favoritos/favoritos.component';
 
 
 
@@ -25,7 +26,8 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
     ComercioComponent,
     IniciarSesionComponent,
     RegistrarseComponent,
-    CatalogoComponent
+    CatalogoComponent,
+    FavoritosComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +39,8 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
     SearchComponent,
     DestacadosComponent,
     BannerComponent,
-    ProductosComponent
+    ProductosComponent,
+    FavoritosComponent
   ]
 })
 export class ApplicationModule { }

@@ -1,0 +1,23 @@
+<section class="favoritos-section">
+    <h1 class="title">Mis Favoritos</h1>
+    <span></span>
+    <div class="container-fav" *ngIf="!tieneComidasFavoritas">
+        <p class="favoritos-text">No tienes ninguna comida favorita!</p>
+        <a href="" class="btn-back">Ir a mirar</a>
+    </div>
+    <div class="container-favoritos" *ngIf="tieneComidasFavoritas">
+        <h3 class="title-fav">Estas son tus comidas favoritas!</h3>
+        <div class="container-food">
+            <div class="card-food">
+              <div class="card-content">
+                <h1 class="card-title">Title food</h1>
+                <p class="card-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut iure suscipit aperiam voluptate!</p>
+                <button class="btn-add">AGREGAR</button>
+              </div>
+              <picture>
+                <img class="card-img" src="" alt="imagen comida">
+              </picture>
+            </div>
+        </div>
+      </div>
+</section>
