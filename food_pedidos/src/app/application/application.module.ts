@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -27,7 +28,8 @@ import { FavoritosComponent } from './favoritos/favoritos.component';
     IniciarSesionComponent,
     RegistrarseComponent,
     CatalogoComponent,
-    FavoritosComponent
+    FavoritosComponent,
+    CartComponent
   ],
   imports: [
     CommonModule,
@@ -40,7 +42,8 @@ import { FavoritosComponent } from './favoritos/favoritos.component';
     DestacadosComponent,
     BannerComponent,
     ProductosComponent,
-    FavoritosComponent
+    FavoritosComponent,
+    CartComponent
   ]
 })
 export class ApplicationModule { }

@@ -1,23 +1,26 @@
-<section class="favoritos-section">
-    <h1 class="title">Mis Favoritos</h1>
+<section class="cart-section">
+    <h1 class="title">Mi Carrito</h1>
     <span></span>
     <div class="container-fav" *ngIf="!tieneComidasFavoritas">
-        <p class="favoritos-text">No tienes ninguna comida favorita!</p>
-        <a routerLink="" class="btn-back">Ir a mirar</a>
+        <p class="cart-text">No tienes ninguna comida agregada!</p>
+        <a routerLink="" class="btn-back">Qué vas a comer?</a>
     </div>
-    <div class="container-favoritos" *ngIf="tieneComidasFavoritas">
-        <h3 class="title-fav">Estas son tus comidas favoritas!</h3>
+    <div class="container-cart" *ngIf="tieneComidasFavoritas">
+        <h3 class="title-fav">Este es tu pedido!</h3>
         <div class="container-food">
             <div class="card-food">
               <div class="card-content">
                 <h1 class="card-title">Title food</h1>
                 <p class="card-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut iure suscipit aperiam voluptate!</p>
-                <button class="btn-add">AGREGAR</button>
+                <button class="btn-add">CANCELAR</button>
               </div>
               <picture>
                 <img class="card-img" src="" alt="imagen comida">
               </picture>
             </div>
         </div>
+        <div class="container-btn">
+          <button class="btn-add">PEDIR</button>
+        </div>  
       </div>
 </section>
