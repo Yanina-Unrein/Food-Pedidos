@@ -1,0 +1,89 @@
+.card-container{
+    padding: 10px;
+}
+.container-food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.card-food {
+    display: flex;
+    align-items: center;
+    /* Ajusta el espacio entre la imagen y el contenido */
+    gap: 10px;
+    border: 1px solid rgba(254,153,28,1);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* El contenido ocupa todo el espacio restante */
+} 
+.card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0; /* Elimina el margen predeterminado del título */
+}
+.card-description{
+    font-size: 0.8rem;
+}
+.card-img {
+    max-width: 100px;
+    height: auto;
+}
+.btn-add{
+    border: none;
+    background-color: rgba(254,153,28,1);
+    color: #fff;
+    font-size: 0.85rem;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn-add:hover{
+    color: rgba(254,153,28,1);
+    border: 1px solid rgba(254,153,28,1);
+    background-color: #fff;
+}
+
+.card-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-food{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.btn-favorite{
+    border: none;
+    cursor: pointer;
+    background: none;
+    transition: transform 0.3s ease;
+}
+.btn-favorite:hover  {
+    transform: scale(1.3); 
+}
+
+.bi{
+    color: rgba(254,153,28,1);    
+    font-size: 1.3rem;
+}
+
+
+
+@media(min-width:700px){
+    .container-food{
+        width: 300px;
+    }
+}
