@@ -57,13 +57,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .price-food{
     font-size: 0.85rem;
     font-weight: 700;
 }
+
+.btn-favorite{
+    border: none;
+    cursor: pointer;
+    background: none;
+    transition: transform 0.3s ease;
+}
+.btn-favorite:hover  {
+    transform: scale(1.3); 
+}
+
+.bi{
+    color: rgba(254,153,28,1);    
+    font-size: 1.3rem;
+}
+
+
 
 @media(min-width:700px){
     .container-food{
