@@ -8,6 +8,7 @@ import { RegistrarseComponent } from './application/registrarse/registrarse.comp
 import { CatalogoComponent } from './application/catalogo/catalogo.component';
 import { FavoritosComponent } from './application/favoritos/favoritos.component';
 import { CartComponent } from './application/cart/cart.component';
+import { VistaDetalladaComponent } from './application/vista-detallada/vista-detallada.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path:'comercio', component:ComercioComponent},
   { path: 'catalogo/:categoria', component: CatalogoComponent },
   { path:'favoritos', component:FavoritosComponent},
-  { path:'carrito', component:CartComponent}
+  { path:'carrito', component:CartComponent},
+  { path:'comida', component:VistaDetalladaComponent}
 ]; 
 
 

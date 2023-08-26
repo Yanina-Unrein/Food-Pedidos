@@ -14,6 +14,7 @@ import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { CartComponent } from './cart/cart.component';
+import { VistaDetalladaComponent } from './vista-detallada/vista-detallada.component';
 
 
 
@@ -29,7 +30,8 @@ import { CartComponent } from './cart/cart.component';
     RegistrarseComponent,
     CatalogoComponent,
     FavoritosComponent,
-    CartComponent
+    CartComponent,
+    VistaDetalladaComponent
   ],
   imports: [
     CommonModule,
